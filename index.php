@@ -9,6 +9,8 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         
+    
+        
        <link rel="apple-touch-icon" sizes="180x180" href="vendors/favicons/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="vendors/favicons/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="vendors/favicons/favicon-16x16.png">
@@ -17,6 +19,8 @@
 <meta name="theme-color" content="#ffffff">
 
         <link href='http://fonts.googleapis.com/css?family=Lato:100,300,400,300italic' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+
        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
@@ -26,8 +30,8 @@
                     <a href="resources/images/ks-fitness-poster.jpg" download="ks-fitness-poster" target="_blank"><img src="resources/images/KS-world.png" alt="img"  class="logo"></a>
                     <a href="#"><img src="resources/images/trito3.png" alt="img"  class="logo-black"></a>
                     <ul class="main-nav js--main-nav">
-                        <li> <a href="sign-up.html">Join Now</a></li>
-                        <li> <a href="login-page.html">Login</a></li>
+                        <li> <a href="sign-up.php">Join Now</a></li>
+                        <li> <a href="login-page.php">Login</a></li>
                         <li> <a href="#premium">Membership</a></li>
                         <li> <a href="#how-it-works">How it works</a></li>
                     </ul>
@@ -46,11 +50,12 @@
                <a href="#"> Hig-B260 shastripuram, Agra, <br> Uttar Pradesh (282007). <br> contact: <ins>+917017836709</ins>, <ins>+919149114332</ins> </a>
             </div>
         </header>
-        <section class="section-features js--section-features" id="features">
+         <section class="section-features js--section-features" id="features"> 
             <div class="row">
                 <h2>
-                    Transform Your Body Fast With Proffesional Trainers.  
+                    Transform Your Body Fast With Professional Trainers.  
                 </h2> <br>
+                
                 <p class="long-copy">
                     We Provide Best Service in North-Asia. We help You To Transform Your Body in Few Months &ndash; Our Trainers Will Guide You How To Do it! 
                 </p>
@@ -73,7 +78,7 @@
                 <div class="col span-3-of-4 box" >
                     <h2> Lady Coach </h2><br>
                     <p>
-                        We also provide a Lady trainer for female our female customers. She may make things easier since they can relate to what you are feeling. With a female trainer ,your comfort level may be higher, which will increase your motivation and help you to get fit easily.    
+                        We also provide a Lady trainer for our female customers. She may make things easier since they can relate to what you are feeling. With a female trainer ,your comfort level may be higher, which will increase your motivation and help you to get fit easily.    
                     </p>
 
                 </div>
@@ -85,7 +90,7 @@
 
                 </div>
             </div>
-        </section>
+        </section> 
         <section class="classes js--section-classes" id="classes">
             <ul class="class-showcase clearfix">
                 <li>
@@ -245,7 +250,7 @@
                 <div class="col span-1-of-4">
                     <blockquote>
                         <p> I <ins>Sahil sharma</ins>, Manager of the KS-fitness-club assure you that you won't be dissapointed after joining ks fitness club, I manages the club and memberships of every members. If you have any query just call here: <ins>+919149101356</ins>. <br>(having my words "It's Not About Having Time, It's About Making Time.") </p>
-                        <cite> <a href="resources/images/ishu.png" download="Sahil-img" target="_blank"> <img src="resources/images/ishu.png"  alt="IMG"></a> Manager</cite>
+                        <cite> <a href="resources/images/Ishu.png" download="Sahil-img" target="_blank"> <img src="resources/images/Ishu.png"  alt="IMG"></a> Manager</cite>
                     </blockquote>
                 </div>
                 <div class="col span-1-of-4 ">
@@ -335,23 +340,18 @@
                 
             </div>
         </section>
+            <div class="row map-box"> 
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3548.618323417806!2d77.93529311437254!3d27.199730354224275!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397477d6a0d8ce67%3A0xb519213143ed01e1!2sK.S.%20fitness%20World!5e0!3m2!1sen!2sin!4v1596366013040!5m2!1sen!2sin"  frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+                </div>
         <section class="section-form" id="form">
             <div class="row" id="form">
                 <h2> We're happy to hear from you </h2>
-                 <div class="row">
-            <form method="post" action="mailer.php" class="contact-form">
+            
                 <div class="row"> 
-                    <?php
-                    if($_Get['success'] == 1) {
-                        echo"<div class=\"form-messages success\">  Thank you! Your Feedback is valuable. </div>";
-                    }
-                    if($_Get['success'] == -1) {
-                        echo"<div class=\"form-messages error\">  Oops! something went wrong. try again! </div>";
-                    }
-                    ?>
-                </div>
-               
                     
+
+
+                    <form method="POST" action =""  autocomplete="on" class="contact-form">
                         <div class="row">
                             <div class=" span-1-of-4">
                                 <label> Name</label>
@@ -360,16 +360,25 @@
                                 <input type="text" name="name" id="name" placeholder="Your name" required>
                             </div>
 
-                        </div> 
+                         </div> 
                         <div class="row">
                             <div class=" span-1-of-4">
                                 <label>Email</label>
                             </div>
                             <div class="col ">
-                                <input type="Email" name="name" id="name" placeholder="Your Email" required>
+                                <input type="Email" name="email" id="name" placeholder="Your Email" required>
                             </div>
 
                         </div>
+                         <div class="row">
+                            <div class=" span-1-of-4">
+                                <label>Phone</label>
+                            </div>
+                            <div class="col ">
+                                <input type="text" name="phone" id="name" placeholder="Your Phone" required>
+                            </div>
+
+                       </div>
                         <div class="row">
                             <div class=" span-1-of-4">
                                 <label> How did you Find us?</label>
@@ -389,32 +398,33 @@
                                 <label>News letter? &nbsp; &nbsp; &nbsp; &nbsp; </label>
                             </div> 
                             <div class="col ">
-                                <input type="checkbox" name="news" id="news" checked> Yes,please
+                                <input type="checkbox" name="news" id="news" checked> <label for="news"> Yes,please </label>
                             </div>
 
-                        </div>
+                       </div>
                         <div class="row">
                             <div class="span-1-of-4">
-                                <label>Any Suggestions?</label>
+                                <label>Any Query?</label>
                             </div>
                             <div class="col ">
-                                <textarea name="message" placeholder="your message"></textarea>
+                                <textarea name="msg" placeholder="your message"></textarea>
                             </div>
 
                         </div>
                         <div class="row">
                             <div class="span-1-of-4">
                                 <label> &nbsp; </label>
-                            </div>
+                            </div> 
                             <div class="col ">
-                                <input type="submit" name="submit" value="Send it!">
-                            </div>
-
+                                <input type="submit" value="Send it!" name="submit">
+                            </div> <br><br><br>
+                            <h2><a href="display.php" style="font-size:80%;">Display all enteries [Administrator]</a> </h3>
                         </div>
                     </form>
                 </div>
             </div>
         </section>
+        
         <section class="opening-hours">
             <div class="hours">
                 <h3>opening-hours</h3><br>
@@ -444,11 +454,11 @@
                         <li><a href="#"><i class="ion-social-facebook"></i></a></li>
                         <li><a href="#"><i class="ion-social-twitter"></i></a></li>
                         <li><a href="#"><i class="ion-social-googleplus"></i></a></li>
-                        <li><a href="#"><i class="ion-social-instagram"></i></a></li>
+                        <li ><a href="#"><i class="ion-social-instagram"></i> <img src="resources/images/insta-icon.png" width="24px"  class="insta-icon" alt="insta."></a></li>
                         
                     </ul>
                 </div> <br>
-                <details class="about-website"> <br> <summary>  About Website </summary> <p> Website designed and developed by: <br> &nbsp; Vishwas Sharma ( Web designer ) <br> CS aspirant (20). </p><br> <details> <summary>Contact </summary> <p> <ins>+918279510767</ins> ,<ins>+919897229168</ins> <br> <ins><a href="#">vishwassharma322@gmail.com</a></ins> </p> </details></details>
+                <details class="about-website"> <br> <summary class="glow">  About Website </summary> <p> Website designed and developed by: <br> &nbsp; Vishwas Sharma ( Web designer ) <br> CS aspirant (20). </p><br> <details> <summary  class="glow">Contact </summary> <br> <p> <ins>+918279510767</ins> ,<ins>+919897229168</ins> <br> <ins><a href="#">vishwassharma322@gmail.com</a></ins> </p> </details></details>
             <div class="row-2">
                 <p>
                     Copyright &copy; 2018 by ks fitness world.&nbsp; &nbsp; All rights reserved.
@@ -456,19 +466,55 @@
             </div>
         </footer>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <!-- <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
+        <! - - <script src="//cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
         <script src="//cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script> -->
+        <script src="//cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
         <script src="vendors/js/jquery.waypoints.min.js"></script>
         
-        <script src="resources/js/script.js"></script>
+        <script src="resources/js/script.js"></script> 
     </body>
 </html> 
 
-<?php 
- include 'contact-form.php';
- ?>
+<?php
+ //include 'contact-form.php';
 
+ $username = "root";
+ $password = "";
+ $server = "localhost";
+ $db = "ks-fitness-world";
+ 
+ $con = mysqli_connect($server,$username,$password,$db);
+
+ if(isset($_POST['submit'])){
+      $name = $_POST['name'];
+       $email = $_POST['email'];
+      $phone = $_POST['phone'];
+      $refer = $_POST['Find-us'];
+       $newsletter = $_POST['news'];
+       $query = $_POST['msg'];
+    //  $id = 1;   
+
+   // $insertquery= " INSERT INTO `contact-form`(`ID`, `Name`, `Email`, `Phone`, `Refer`, `News letter`, `query`) VALUES ([$id],[$name],[$email],[$phone],[$refer],[$newsletter],[$query])";
+  //  $insertquery = " insert into contact-form(Name,Email,Phone,Refer,News letter,query) values('$name' ,'$email' ,'$phone' ,'$refer' ,'$newsletter' ,'$query')";
+
+   $insertquery = " insert into Contactform(Name,Email,Phone,Refer,query) values('$name','$email','$phone','$refer','$query')";
+   $result= mysqli_query($con,$insertquery);
+
+    if($result){
+        ?>
+        <script> alert("Submitted successfully! we will contact you soon."); </script>
+        <?php
+       
+    }else{
+        ?>
+         <script> alert("Submition Failed! try again later."); </script>
+         <?php
+    }
+   
+    
+ }
+
+?>
 
 
 

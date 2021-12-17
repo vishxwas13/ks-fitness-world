@@ -6,7 +6,7 @@ $server = "localhost";
 $db = "ks-fitness-world";
 
 $con = mysqli_connect($server,$username,$password,$db);
-if($db){
+if($con){
    // echo"connection successful";
 ?>
 <script>
@@ -16,3 +16,15 @@ if($db){
 }
  else{ echo"connection failed"; }
 ?>
+
+
+
+
+
+
+
+
+
+
+
+
