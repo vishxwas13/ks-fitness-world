@@ -475,7 +475,7 @@
     </body>
 </html> 
 
-<?php
+<!-- <?php
  //include 'contact-form.php';
 
  $username = "root";
@@ -492,11 +492,7 @@
       $refer = $_POST['Find-us'];
        $newsletter = $_POST['news'];
        $query = $_POST['msg'];
-    //  $id = 1;   
-
-   // $insertquery= " INSERT INTO `contact-form`(`ID`, `Name`, `Email`, `Phone`, `Refer`, `News letter`, `query`) VALUES ([$id],[$name],[$email],[$phone],[$refer],[$newsletter],[$query])";
-  //  $insertquery = " insert into contact-form(Name,Email,Phone,Refer,News letter,query) values('$name' ,'$email' ,'$phone' ,'$refer' ,'$newsletter' ,'$query')";
-
+ 
    $insertquery = " insert into Contactform(Name,Email,Phone,Refer,query) values('$name','$email','$phone','$refer','$query')";
    $result= mysqli_query($con,$insertquery);
 
@@ -514,7 +510,7 @@
     
  }
 
-?>
+?> -->
 
 
 
