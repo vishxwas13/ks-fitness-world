@@ -24,24 +24,24 @@ session_start();
                     <input type="password" class="type" id="confirm_password" name="confirm-password" placeholder="Confirm-Password" required>
                     <input type="submit" class="type-2" name="submit" value="Sign-up">  
                     <script>
-                        var password = document.getElementById("password")
-                        , confirm_password = document.getElementById("confirm_password");
+//                         var password = document.getElementById("password")
+//                         , confirm_password = document.getElementById("confirm_password");
 
-                        function validatePassword(){
-                         if(password.value != confirm_password.value) {
-                         confirm_password.setCustomValidity("Passwords Don't Match");
-                         } else {
-                         confirm_password.setCustomValidity("");
-                         }
-                        }
+//                         function validatePassword(){
+//                          if(password.value != confirm_password.value) {
+//                          confirm_password.setCustomValidity("Passwords Don't Match");
+//                          } else {
+//                          confirm_password.setCustomValidity("");
+//                          }
+//                         }
 
-                        password.onchange = validatePassword;
-                        confirm_password.onkeyup = validatePassword;
+//                         password.onchange = validatePassword;
+//                         confirm_password.onkeyup = validatePassword;
 
 
                      </script>             
             </form>
-            <div class="user-login"> <a href="login-page.php"><p>Already a user? login </a></p> <a href="index.php"><p>Home-page </a></p></div> 
+            <div class="user-login"> <a href="login-page.html"><p>Already a user? login </a></p> <a href="index.html"><p>Home-page </a></p></div> 
             
         </div>
     </body>
